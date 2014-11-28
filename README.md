@@ -43,7 +43,7 @@ If **inside Raspberry Pi:**
     $ git clone https://github.com/diegoherranz/RPiCM-LAN-DT
     $ cd RPiCM-LAN-DT
     $ sudo make install
-And reboot. Firmware will take care of LAN reset line.
+And reboot. Firmware will take care of LAN reset line from now on.
 
 
 If **not on the raspberry Pi:**
@@ -51,7 +51,7 @@ If **not on the raspberry Pi:**
     $ git clone https://github.com/diegoherranz/RPiCM-LAN-DT
     $ cd RPiCM-LAN-DT
     $ make
-And copy the generated file (`dt-blob.bin`) to the boot partition of Raspberry Pi Compute module. On the next boot, firmware will take care of LAN reset line.
+And copy the generated file (`dt-blob.bin`) to the boot partition of Raspberry Pi Compute module. From the next boot, firmware will take care of LAN reset line.
 
 More information
 ----------------
