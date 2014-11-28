@@ -11,7 +11,7 @@ Introduction
 ------------
 Raspberry Pi models B and B+ control the reset of LAN951X chip using a GPIO pin. Different versions of Raspberry Pi use different GPIO pins.
 
-The information of which GPIO pin is being used for that purpose on each Raspberry Pi version is described on a [Device Tree](http://en.wikipedia.org/wiki/Device_tree) and included on the [Raspberry Pi firmware](raspberrypi/firmware).
+The information of which GPIO pin is being used for that purpose on each Raspberry Pi version is described on a [Device Tree](http://en.wikipedia.org/wiki/Device_tree) and included on the [Raspberry Pi firmware](https://github.com/raspberrypi/firmware).
 
 In case of Raspberry Pi Compute Module, the default firmware Device Tree, doesn't include information about which pin is used for LAN reset because each designer can choose whatever gpio they want (or even doesn't use LAN at all).
 
@@ -24,7 +24,7 @@ Requirements
 
 Chosen GPIO pin
 ---------------
-On this repository, like the Raspberry Pi B, GPIO pin 6 (BCM numbering) has been chosen. If you want to use another PIN, take a look at [this commit](8fd1b25e71f0dd1fdaaa424efa5ac7d270eaba5b) to have an idea of what to change.
+On this repository, like the Raspberry Pi B, GPIO pin 6 (BCM numbering) has been chosen. If you want to use another PIN, take a look at [this commit](https://github.com/diegoherranz/RPiCM-LAN-DT/commit/8fd1b25e71f0dd1fdaaa424efa5ac7d270eaba5b) to have an idea of what to change.
 
 LAN951X oscillator
 ------------------
