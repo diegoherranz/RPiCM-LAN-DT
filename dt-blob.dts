@@ -274,6 +274,7 @@
                      startup_state = "inactive";
                      function = "input";
                   }; // pin
+                  pin@p6  { function = "output"; termination = "pull_down"; }; // LAN NRESET
                   pin@p14 { function = "uart0";  termination = "no_pulling";    }; // TX uart0
                   pin@p15 { function = "uart0";  termination = "pull_up"; }; // RX uart0
                   pin@p48 { function = "sdcard"; termination = "pull_up";    drive_strength_mA = < 8 >; }; // SD CLK
@@ -285,6 +286,10 @@
 
                }; // pin_config
                pin_defines {
+                  pin_define@LAN_RESET {
+                     type = "internal";
+                     number = <6>;
+                  };
                }; // pin_defines
             }; // pins_cm
    };
