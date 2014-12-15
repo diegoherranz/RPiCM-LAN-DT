@@ -6,4 +6,7 @@ dt-blob.bin: dt-blob.dts
 install: dt-blob.bin
 	cp $< /boot/
 
-.PHONY: all install
+clean:
+	rm -f dt-blob.bin
+
+.PHONY: all install clean
