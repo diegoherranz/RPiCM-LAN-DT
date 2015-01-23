@@ -277,6 +277,7 @@
                   pin@p6  { function = "output"; termination = "pull_down"; }; // LAN NRESET
                   pin@p14 { function = "uart0";  termination = "no_pulling";    }; // TX uart0
                   pin@p15 { function = "uart0";  termination = "pull_up"; }; // RX uart0
+                  pin@p47 { function = "output"; termination = "pull_down"; }; // activity LED
                   pin@p48 { function = "sdcard"; termination = "pull_up";    drive_strength_mA = < 8 >; }; // SD CLK
                   pin@p49 { function = "sdcard"; termination = "pull_up";    drive_strength_mA = < 8 >; }; // SD CMD
                   pin@p50 { function = "sdcard"; termination = "pull_up";    drive_strength_mA = < 8 >; }; // SD D0
@@ -286,6 +287,10 @@
 
                }; // pin_config
                pin_defines {
+                  pin_define@LEDS_DISK_ACTIVITY {
+                     type = "internal";
+                     number = <47>;
+                  };
                   pin_define@LAN_RESET {
                      type = "internal";
                      number = <6>;
