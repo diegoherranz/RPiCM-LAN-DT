@@ -24,7 +24,7 @@ Requirements
 
 Chosen GPIO pin
 ---------------
-On this repository, like the Raspberry Pi B, GPIO pin 6 (BCM numbering) has been chosen. If you want to use another PIN, take a look at [this commit](https://github.com/diegoherranz/RPiCM-LAN-DT/commit/8fd1b25e71f0dd1fdaaa424efa5ac7d270eaba5b) to have an idea of what to change.
+On this repository, like the Raspberry Pi B, GPIO 6 (BCM numbering) has been chosen. If you want to use another GPIO, take a look at [this commit](https://github.com/diegoherranz/RPiCM-LAN-DT/commit/8fd1b25e71f0dd1fdaaa424efa5ac7d270eaba5b) to have an idea of what to change.
 
 LAN951X oscillator
 ------------------
